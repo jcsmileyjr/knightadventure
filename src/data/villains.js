@@ -2,7 +2,7 @@ export const villains = [
   {
     id: "goblin",
     name: "goblin",
-    image: "/images/goblin.png",
+    image: "/images/goblin.jpg",
     paragraphs: [
       "A rustle in the underbrush is the only warning you get before the {{goblin}} shoves through into the glade. Your stomach drops at the sight of it.",
       "Its skin is a dark, slimy, sickly green, stretched taut and hairless over a frame that looks wrong in ways you can't quite name. Its eyes are the worst part: big, round, burning a dead furious light, each one the size of a dinner plate, fixed on you without blinking. Its mouth splits open, rows of serrated, knife-like teeth catching the grove's strange light, bits of bloody flesh still wedged between them from some earlier meal.",
