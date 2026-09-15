@@ -67,8 +67,14 @@
 .villain-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   display: block;
+}
+
+@media (max-width: 768px) {
+  .villain-image {
+    object-fit: cover;
+  }
 }
 
 .villain-image-placeholder {
