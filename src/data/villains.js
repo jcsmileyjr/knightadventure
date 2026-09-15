@@ -14,7 +14,7 @@ export const villains = [
   {
     id: "frost-knight",
     name: "frost knight",
-    image: "/images/frost-knight.png",
+    image: "/images/frost-knight.jpg",
     paragraphs: [
       "Thunder claps, brutal and sudden, assaulting your senses before you even see him arrive. When your vision clears, the biggest human you have ever seen, or imagined, stands before you.",
       "His armor is hard, granite gray metal, scorched and pitted as if he'd walked straight out of a forge fire. He wields a longsword as long as you are tall and as thick as your waist, a blade too monstrous for anything mortal to swing.",
