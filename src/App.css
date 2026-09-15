@@ -1,0 +1,132 @@
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.story-text {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+}
+
+.story-text p:last-child {
+  margin-bottom: 0;
+}
+
+.highlight {
+  color: var(--red);
+  font-weight: 700;
+}
+
+/* Intro screen */
+.name-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.name-form label {
+  color: var(--text-dim);
+}
+
+.name-form input {
+  font: inherit;
+  width: 100%;
+  max-width: 320px;
+  box-sizing: border-box;
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text);
+}
+
+.name-form input:focus {
+  outline: 2px solid var(--gold);
+}
+
+/* Villain image */
+.villain-image-frame {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  max-height: 320px;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background: #0a0908;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.villain-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.villain-image-placeholder {
+  color: var(--text-dim);
+  font-size: 3rem;
+  opacity: 0.4;
+}
+
+/* Choice buttons */
+.choice-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.choice-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  min-width: 96px;
+  padding: 16px 12px;
+}
+
+.choice-icon {
+  font-size: 1.8rem;
+}
+
+/* Round result */
+.round-result {
+  text-align: center;
+}
+
+.opponent-choice {
+  color: var(--blue);
+}
+
+.win-text {
+  color: var(--green);
+  font-weight: 700;
+}
+
+.tie-text {
+  color: var(--orange);
+  font-weight: 700;
+}
+
+.round-result button {
+  margin-top: 8px;
+}
+
+/* Victory / Defeat */
+.victory-screen button,
+.defeat-screen button {
+  align-self: center;
+}
+
+.defeat-title {
+  color: var(--red);
+}
