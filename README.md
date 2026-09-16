@@ -1,16 +1,59 @@
-# React + Vite
+# A Knight's Adventure
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A Rock-Paper-Scissors adventure game built with React + Vite. Face five villains in sequence — win each round to press onward, lose once and the adventure ends.
 
-Currently, two official plugins are available:
+This is a browser port of an [original Python CLI version](https://github.com/jcsmileyjr/python-practice/tree/main/knight_adventure) of the same game.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Play it live:** https://jcsmileyjr.github.io/knightadventure/
 
-## React Compiler
+## Screenshot
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![Goblin encounter](public/images/goblin.jpg)
 
-## Expanding the Oxlint configuration
+## How to play
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+1. Enter your name to begin.
+2. Each of the five villains — goblin, frost knight, giant spider, cursed wight, and dragon — challenges you to Rock, Paper, or Scissors.
+3. Win the round to advance to the next villain. A tie just replays the round.
+4. Lose a single round and the adventure ends in defeat.
+5. Beat all five to win the game.
+
+## Tech stack
+
+- [React 19](https://react.dev/)
+- [Vite](https://vite.dev/)
+- Plain CSS (no UI framework)
+- Deployed to GitHub Pages via [`gh-pages`](https://www.npmjs.com/package/gh-pages)
+
+## Getting started
+
+```bash
+git clone https://github.com/jcsmileyjr/knightadventure.git
+cd knightadventure
+npm install
+npm run dev
+```
+
+The dev server runs at `http://localhost:5173`.
+
+## Available scripts
+
+| Script | Description |
+| --- | --- |
+| `npm run dev` | Start the local dev server with hot reload |
+| `npm run build` | Build the production bundle to `dist/` |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Run Oxlint |
+| `npm run deploy` | Build and publish `dist/` to GitHub Pages |
+
+## Adding or replacing villain art
+
+Drop an image into `public/images/` named to match the villain's `image` path in `src/data/villains.js`, for example `goblin.jpg` or `dragon.png`. Any common web image format works.
+
+- Recommended size: roughly **1200×900px** (4:3) or **1200×675px** (16:9) — sharp on both mobile and desktop layouts.
+- Images are cropped to fill their frame (`object-fit: cover`), so keep the villain centered in the shot.
+- A missing image falls back to a placeholder frame automatically, so the game still plays fine before art is ready.
+
+## Credits
+
+Story and game design originally written by JC Smiley as a Python CLI exercise, ported to React for the web.
