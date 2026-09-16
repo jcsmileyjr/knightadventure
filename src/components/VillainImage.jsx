@@ -1,8 +1,9 @@
 import { useState } from "react";
 
-// Shows the villain's artwork if it exists at /public/images/<id>.png,
-// otherwise falls back to a placeholder frame so the game still plays
-// fine before the art is dropped in.
+// Shows the villain's artwork if it exists in /public/images/, otherwise
+// falls back to a placeholder frame so the game still plays fine before
+// the art is dropped in. `src` is joined onto BASE_URL so images resolve
+// correctly under Vite's configured base path (e.g. GitHub Pages).
 export default function VillainImage({ src, alt }) {
   const [failed, setFailed] = useState(false);
 
@@ -10,7 +11,7 @@ export default function VillainImage({ src, alt }) {
     <div className="villain-image-frame">
       {!failed ? (
         <img
-          src={src}
+          src={`${import.meta.env.BASE_URL}${src}`}
           alt={alt}
           onError={() => setFailed(true)}
           className="villain-image"
