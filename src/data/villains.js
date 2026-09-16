@@ -36,7 +36,7 @@ export const villains = [
   {
     id: "wight",
     name: "cursed wight",
-    image: "images/wight.png",
+    image: "images/wight.jpg",
     paragraphs: [
       "Breathing hard, you steel yourself for the next fright, and it is ghastlier than your mind can grasp. Death itself oozes up from the ground, black and viscous, pooling before slowly rising.",
       "A dreadful apparition forms, shadow knitting itself into the shape of a {{cursed wight}}, once a knight, now only a memory.",
