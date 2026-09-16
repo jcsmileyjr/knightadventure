@@ -25,7 +25,7 @@ export const villains = [
   {
     id: "spider",
     name: "giant spider",
-    image: "/images/spider.png",
+    image: "/images/spider.jpg",
     paragraphs: [
       "You can barely understand how you survived that last monstrosity before the next threat descends upon you. Tree limbs break somewhere above, cracking like the sky itself is coming down.",
       "Huge globs of steaming acid begin falling all around you, flung loose from something massive still hidden in the canopy. Where they hit the ground, the earth churns and bubbles, hissing itself into a scarred, smoking pulp.",
