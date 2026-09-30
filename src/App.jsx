@@ -9,6 +9,7 @@ import "./App.css";
 const INITIAL_STATE = {
   screen: "intro", // intro | battle | victory | defeat
   knightName: "",
+  inventory: [],
   challengeIndex: 0,
 };
 
