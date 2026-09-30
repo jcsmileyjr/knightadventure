@@ -23,7 +23,7 @@ export default function BattleScreen({
   }
 
   function handleContinue() {
-    if (round.outcome === "win") onWin();
+    if (round.outcome === "win") onWin(villain);
     else onLose();
   }
 
