@@ -130,6 +130,19 @@
   margin-bottom: 12px;
 }
 
+.item-prompt-roll {
+  text-align: center;
+}
+
+.item-prompt-roll button {
+  margin: 0 6px 8px;
+}
+
+.item-roll-result {
+  text-align: center;
+  color: var(--orange);
+}
+
 /* Round result */
 .round-result {
   text-align: center;

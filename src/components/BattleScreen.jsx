@@ -8,6 +8,7 @@ export default function BattleScreen({
   villain,
   challengeNum,
   totalChallenges,
+  itemRoll,
   onWin,
   onLose,
 }) {
@@ -40,6 +41,13 @@ export default function BattleScreen({
       <VillainImage src={villain.image} alt={villain.name} />
 
       <StoryText paragraphs={villain.paragraphs} />
+
+      {itemRoll && (
+        <p className="item-roll-result">
+          Your die: <strong>{itemRoll.player}</strong>. {villain.name}'s die:{" "}
+          <strong>{itemRoll.opponent}</strong>. The item was lost.
+        </p>
+      )}
 
       {!round && (
         <ChoiceButtons onChoose={handleChoose} disabled={resolving} />
