@@ -104,6 +104,32 @@
   font-size: 1.8rem;
 }
 
+/* Item prompt */
+.item-prompt-items {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.item-prompt-item {
+  flex: 1 1 180px;
+  max-width: 280px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--panel);
+}
+
+.item-prompt-item p:first-child {
+  margin-top: 0;
+}
+
+.item-prompt-item p:last-of-type {
+  margin-bottom: 12px;
+}
+
 /* Round result */
 .round-result {
   text-align: center;
