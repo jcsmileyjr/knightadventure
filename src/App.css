@@ -4,6 +4,47 @@
   align-items: stretch;
 }
 
+/* Inventory */
+.item-tray {
+  margin-bottom: 24px;
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--panel);
+}
+
+.item-tray-title {
+  margin: 0 0 8px;
+  color: var(--text-dim);
+  font-size: 1rem;
+  text-align: left;
+}
+
+.item-tray-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item-tray-item {
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+}
+
+.item-tray-count {
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
+.item-tray-empty {
+  margin: 0;
+  color: var(--text-dim);
+}
+
 .story-text {
   background: var(--panel);
   border: 1px solid var(--border);

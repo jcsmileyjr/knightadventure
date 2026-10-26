@@ -3,6 +3,7 @@ import { villains } from "./data/villains";
 import IntroScreen from "./components/IntroScreen";
 import BattleScreen from "./components/BattleScreen";
 import ItemPrompt from "./components/ItemPrompt";
+import ItemTray from "./components/ItemTray";
 import VictoryScreen from "./components/VictoryScreen";
 import DefeatScreen from "./components/DefeatScreen";
 import "./App.css";
@@ -94,6 +95,8 @@ export default function App() {
 
   return (
     <div className="app">
+      {game.screen !== "intro" && <ItemTray inventory={game.inventory} />}
+
       {game.screen === "intro" && <IntroScreen onStart={handleStart} />}
 
       {game.screen === "item-prompt" && (
